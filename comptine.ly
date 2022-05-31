@@ -1,4 +1,4 @@
-\version "2.7.40"
+\version "2.22"
 \language "english"
 \header {
   composer = "Yann Tiersen"
@@ -26,24 +26,67 @@ upper = \relative c'' {
   }
 
   % bar 9
-  e'4.  -4  b8~b2 -1
-  d4.   -3  b8~b2 -1
-  fs'4. -4  b,8~2 -1
-  fs'4. -4  a,8~2 -1 \break 
+  e'4.  -4  (b8~b2 -1)
+  d4.   -3  (b8~b2 -1)
+  fs'4. -4  (b,8~2 -1)
+  fs'4. -4  (a,8~2 -1) \break 
 
   % Bar 13
-  % kye use 1 and 5
-  % ian use 1 and 5
-  % rousseau use 2 and 5 
-  <b-1 g'-5>4. r8 r4 r4
+  <b-1 g'-5>4. (<g-1 e'-5>8 ~2)
 
-  r4 r4 r4 r4
-  r4 r4 r4 r4
-  r4 r4 r4 r4
+  % Bar 14
+  <b-1 g'-5>4. (<g-1 d'-4>8 ~2)
+
+  % Bar 15
+  <b-1 fs'-4>4. (<fs-1 d'-4>8 ~2)
+
+  % Bar 16
+  <a-1 fs'-4>4. (<fs-1 d'-4>8 ~2) \break
+
+  % Bar 17
+
+  \repeat volta 2 {
+    b16->-1 e-2 b'-5 
+    b, e b'   
+    b, e b'   
+    b, e b'   
+    b,->e c-> e 
+
+    % Bar 18
+    b-> d b' 
+    b, d b'   
+    b, d b'   
+    b, d b'   
+    b,->d a-> d 
+
+    % Bar 19
+    fs,-> b fs' 
+    fs,   b fs'   
+    fs,   b fs'   
+    fs,   b fs'   
+    fs,-> b g-> b 
+  }
+  % Bar 20
+  \alternative {
+    { 
+      a->  d a' 
+      a,   d a'   
+      a,   d a'   
+      a,   d a'   
+      a,-> d g,-> d'
+    }
+    % Bar 21
+    { 
+      a->  d a' 
+      a,   d a'   
+      a,   d a'   
+      a,   d a'   
+      a,-> d a'-> g
+    }
+  }
 }
-
 \parallelMusic voiceB,voiceC {
-  \repeat unfold 4 {
+  \repeat unfold 5 {
     % Bar 1
     e'8 b e' b e' b e' b   |
     e4    g4   e4   g4     |
@@ -60,6 +103,9 @@ upper = \relative c'' {
     d'8 a d' a  d' a d' a  |
     d4    fs4   d4   fs4   |
   }
+    % Bar 21
+    d'8 a d' a  d' a d' a  |
+    d4    fs4   d4   fs4   |
 }
 
 
@@ -67,7 +113,7 @@ upper = \relative c'' {
   \new PianoStaff 
   <<
     \new Staff \upper
-    \new Staff << \clef bass \key g \major \voiceB \\ \voiceC  >>
+    \new Staff <<  \clef bass \key g \major  \voiceB \\ \voiceC  >>
   >>
   \layout { }
   \midi { }
