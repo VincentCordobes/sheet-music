@@ -15,7 +15,7 @@ upper = \relative c'' {
   \time 4/4
 
   % Bar 1 - 4
-  r1 r r r
+  r1 r r r \break
 
   % Bar 5
   \repeat volta 2 {
@@ -81,10 +81,39 @@ upper = \relative c'' {
       a,   d a'   
       a,   d a'   
       a,   d a'   
-      a,-> d a'-> g
+      a,-> d a'8
     }
   }
+
+  % Bar 22
+  \repeat volta 2 {
+    r8 g16  ( fs g8   b16 c b2 )
+    r8 fs16 ( g  fs8  g16 a g2 )
+    r8 fs16 ( e  fs8  b16 c b2 )
+    r8 fs16 ( e    fs2. )
+  } \break
+
+  \set Staff.ottavationMarkups = #ottavation-ordinals
+  \ottava #1
+  % bar 26
+  e'4.    (b8~b2 )
+  d4.     (b8~b2 )
+  fs'4.   (b,8~2 )
+  fs'4.   (a,8~2 ) \break 
+
+  % Bar 27
+  <b g'>4. (<g e'>8 ~2)
+
+  % Bar 28
+  <b g'>4. (<g d'>8 ~2)
+
+  % Bar 29
+  <b fs'>4. (<fs d'>8 ~2)
+
+  % Bar 30
+  <a fs'>4. (<fs d'>8 ~2) \break
 }
+
 \parallelMusic voiceB,voiceC {
   \repeat unfold 5 {
     % Bar 1
@@ -105,7 +134,24 @@ upper = \relative c'' {
   }
     % Bar 21
     d'8 a d' a  d' a d' a  |
+    d4    fs4   d4   fs4   | \break
+
+
+    % Bar 22
+    \repeat unfold 3 {
+    e'8 b e' b e' b e' b   |
+    e4    g4   e4   g4     |
+
+    d'8 b d' b  d' b d' b  |
+    d4    g4    d4   g4    |
+
+    d'8 b d' b  d' b d' b  |
     d4    fs4   d4   fs4   |
+
+    d'8 a d' a  d' a d' a  |
+    d4    fs4   d4   fs4   |
+  }
+
 }
 
 
