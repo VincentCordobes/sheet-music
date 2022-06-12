@@ -101,17 +101,58 @@ upper = \relative c'' {
   fs'4.   (b,8~2 )
   fs'4.   (a,8~2 ) \break 
 
-  % Bar 27
+  % Bar 30
   <b g'>4. (<g e'>8 ~2)
 
-  % Bar 28
+  % Bar 31
   <b g'>4. (<g d'>8 ~2)
 
-  % Bar 29
+  % Bar 32
   <b fs'>4. (<fs d'>8 ~2)
 
-  % Bar 30
+  % Bar 33
   <a fs'>4. (<fs d'>8 ~2) \break
+
+  % Bar 34
+  \repeat volta 2 {
+    b16-> e b' 
+    b, e b'   
+    b, e b'   
+    b, e b'   
+    b,->e c-> e 
+
+    % Bar 35
+    b-> d b' 
+    b, d b'   
+    b, d b'   
+    b, d b'   
+    b,->d a-> d 
+
+    % Bar 36
+    fs,-> b fs' 
+    fs,   b fs'   
+    fs,   b fs'   
+    fs,   b fs'   
+    fs,-> b g-> b 
+  }
+  % Bar 37
+  \alternative {
+    { 
+      a->  d a' 
+      a,   d a'   
+      a,   d a'   
+      a,   d a'   
+      a,-> d g,-> d'
+    }
+    % Bar 38
+    { 
+      a->  d a' 
+      a,   d a'   
+      a,   d a'   
+      a,   d a'   
+      a,-> d a'a,
+    }
+  }
 }
 
 \parallelMusic voiceB,voiceC {
@@ -138,7 +179,7 @@ upper = \relative c'' {
 
 
     % Bar 22
-    \repeat unfold 3 {
+    \repeat unfold 4 {
     e'8 b e' b e' b e' b   |
     e4    g4   e4   g4     |
 
@@ -151,6 +192,9 @@ upper = \relative c'' {
     d'8 a d' a  d' a d' a  |
     d4    fs4   d4   fs4   |
   }
+    % Bar 38
+    d'8 a d' a  d' a d' a  |
+    d4    fs4   d4   fs4   | \break
 
 }
 
