@@ -153,6 +153,31 @@ upper = \relative c'' {
       a,-> d a'a,
     }
   }
+
+  \repeat volta 2 {
+    % Bar 39
+    g'-5-> g,-1 b-2
+    e-4 g, b
+    g' g, b
+    e g, b
+    g'-> g, a'-> g,
+
+    % Bar 40
+    g'-5 g,-1 b-2
+    d-3 g, b
+    g' g, b
+    d g, b
+    g'-> g, d'-> e
+
+    fs->  fs, b d fs, b 
+    fs'   fs, b d fs, b 
+    fs'-> fs, e'-> fs,
+
+    fs'-> fs, a d fs, a 
+    fs'-> fs, a d fs, a 
+    fs'-> fs, e'-> fs, \break
+  }
+
 }
 
 \parallelMusic voiceB,voiceC {
@@ -195,6 +220,21 @@ upper = \relative c'' {
     % Bar 38
     d'8 a d' a  d' a d' a  |
     d4    fs4   d4   fs4   | \break
+
+
+    \repeat unfold 1 {
+    e'8 b e' b e' b e' b   |
+    e4    g4   e4   g4     |
+
+    d'8 b d' b  d' b d' b  |
+    d4    g4    d4   g4    |
+
+    d'8 b d' b  d' b d' b  |
+    d4    fs4   d4   fs4   |
+
+    d'8 a d' a  d' a d' a  |
+    d4    fs4   d4   fs4   |
+  }
 
 }
 
