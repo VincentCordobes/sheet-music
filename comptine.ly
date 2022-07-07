@@ -178,6 +178,26 @@ upper = \relative c'' {
     fs'-> fs, e'-> fs, \break
   }
 
+  \repeat volta 2 {
+    % \ottava #0
+    e'-> e, g b e, g
+    e' e, g b e, g
+    e'-> e, b'-> e,
+
+    d'-> d, g b d, g
+    d' d, g b d, g
+    d'-> d, b'-> d,
+
+    d'-> d, fs b d, fs
+    d' d, fs b d, fs
+    d'-> d, b'-> d,
+
+    d'-> d, fs a d, fs
+    d' d, fs a d, fs
+    d'-> d, a'-> d,
+  }
+
+
 }
 
 \parallelMusic voiceB,voiceC {
@@ -222,7 +242,7 @@ upper = \relative c'' {
     d4    fs4   d4   fs4   | \break
 
 
-    \repeat unfold 1 {
+    \repeat unfold 2 {
     e'8 b e' b e' b e' b   |
     e4    g4   e4   g4     |
 
