@@ -204,12 +204,19 @@ upper = \relative c'' {
   } \break
 
   \ottava #0
-  <b-1 e-2 b'-5>8.   (<b-1 e-2 g-3>16 ~ <b e g>8    <b e b'> ~ <b e b'>16)  e16 b e
-  b'8 c
+  \repeat volta 2 {
+    <b-1 e-2 b'-5>8.   (<b-1 e-2 g-3>16 ~ <b e g>8    <b e b'> ~ <b e b'>16)  e16 b e
+    b'8 c
 
-  <b,-1 d-2 b'-5>8.   (<b-1 d-2 g-4>16 ~ <b d g>8    <b d b'> ~ <b d b'>16)  d16 b d
-  <b d b'>8 <a d a'>
+    <b,-1 d-2 b'-5>8.   (<b-1 d-2 g-4>16 ~ <b d g>8    <b d b'> ~ <b d b'>16)  d16 b d
+    <b d b'>8 <a d a'>
 
+    <fs b fs'>8.   (<fs b fs'>16 ~ <fs b fs'>8    <fs b fs'>4.)
+    <fs b fs'>8 <g b g'>
+
+    <a d a'>8.   (<a d a'>16 ~ <a d a'>8    <a d a'>4.)
+    <a d a'>8 <g d' g>
+  }
 
 }
 
