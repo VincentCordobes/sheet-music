@@ -160,42 +160,55 @@ upper = \relative c'' {
     e-4 g, b
     g' g, b
     e g, b
-    g'-> g, a'-> g,
+    g'-> ( g, a'-> g,
 
     % Bar 40
-    g'-5 g,-1 b-2
+    g'-5) g,-1 b-2
     d-3 g, b
     g' g, b
     d g, b
-    g'-> g, d'-> e
+    g'-> ( g, d'-3-> e-4
 
-    fs->  fs, b d fs, b 
+    % Bar 41
+    fs-5->)  fs,-1 b-2 d-3 fs, b 
     fs'   fs, b d fs, b 
     fs'-> fs, e'-> fs,
 
-    fs'-> fs, a d fs, a 
+    % Bar 42
+    fs'-5-> fs,-1 a-2 d-4 fs, a 
     fs'-> fs, a d fs, a 
     fs'-> fs, e'-> fs, \break
   }
 
   \repeat volta 2 {
     % \ottava #0
-    e'-> e, g b e, g
+    % Bar 43
+    e'-5-> e,-1 g-2 b-3 e, g
     e' e, g b e, g
     e'-> e, b'-> e,
 
-    d'-> d, g b d, g
+    % Bar 44
+    d'-5-> d,-1 g-2 b-4 d, g
     d' d, g b d, g
     d'-> d, b'-> d,
 
-    d'-> d, fs b d, fs
+    % Bar 45
+    d'-5-> d,-1 fs-2 b-4 d, fs
     d' d, fs b d, fs
     d'-> d, b'-> d,
 
-    d'-> d, fs a d, fs
+    % Bar 46
+    d'-5-> d,-1 fs-2 a-3 d, fs
     d' d, fs a d, fs
     d'-> d, a'-> d,
-  }
+  } \break
+
+  \ottava #0
+  <b-1 e-2 b'-5>8.   (<b-1 e-2 g-3>16 ~ <b e g>8    <b e b'> ~ <b e b'>16)  e16 b e
+  b'8 c
+
+  <b,-1 d-2 b'-5>8.   (<b-1 d-2 g-4>16 ~ <b d g>8    <b d b'> ~ <b d b'>16)  d16 b d
+  <b d b'>8 <a d a'>
 
 
 }
@@ -242,7 +255,7 @@ upper = \relative c'' {
     d4    fs4   d4   fs4   | \break
 
 
-    \repeat unfold 2 {
+    \repeat unfold 3 {
     e'8 b e' b e' b e' b   |
     e4    g4   e4   g4     |
 
