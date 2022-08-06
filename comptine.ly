@@ -216,7 +216,12 @@ upper = \relative c'' {
 
     <a d a'>8.   (<a d a'>16 ~ <a d a'>8    <a d a'>4.)
     <a d a'>8 <g d' g>
-  }
+  } \break
+
+                                  % 3                 % 4
+  r8 <g b e>~<g b e>16  <b e g>8. <e g b>8. <g b e>16~<g b e>8 <b e g>
+
+  r8 <b d g>~<b d g>16  <g b d>8. <d g b>8. <b d g >16~<b d g>8 <g b d>
 
 }
 
@@ -262,7 +267,7 @@ upper = \relative c'' {
     d4    fs4   d4   fs4   | \break
 
 
-    \repeat unfold 3 {
+    \repeat unfold 4 {
     e'8 b e' b e' b e' b   |
     e4    g4   e4   g4     |
 
