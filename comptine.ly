@@ -218,10 +218,11 @@ upper = \relative c'' {
     <a d a'>8 <g d' g>
   } \break
 
-                                  % 3                 % 4
-  r8 <g b e>~<g b e>16  <b e g>8. <e g b>8. <g b e>16~<g b e>8 <b e g>
 
-  r8 <b d g>~<b d g>16  <g b d>8. <d g b>8. <b d g >16~<b d g>8 <g b d>
+  r8 <g-1 b-2 e-5>~<g b e>16  <b-1 e-3 g-5>8.
+  <e-1 g-3 b-5>8. <g-1 b-2 e-5>16~<g b e>8 <b-1 e-3 g-5>
+
+  r8 <b-1 d-2 g-5>~<b d g>16  <g-1 b-3 d-5>8. <d-1 g-3 b-5>8. <b-1 d-2 g-5 >16~<b d g>8 <g-1 b-3 d-5>
 
 }
 
