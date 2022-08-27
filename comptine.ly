@@ -219,10 +219,38 @@ upper = \relative c'' {
   } \break
 
 
-  r8 <g-1 b-2 e-5>~<g b e>16  <b-1 e-3 g-5>8.
-  <e-1 g-3 b-5>8. <g-1 b-2 e-5>16~<g b e>8 <b-1 e-3 g-5>
+  \repeat volta 2 {
+    r8 <g-1 b-2 e-5>~<g b e>16  <b-1 e-3 g-5>8.
+    <e-1 g-3 b-5>8. <g-1 b-2 e-5>16~<g b e>8 <b-1 e-3 g-5>
 
-  r8 <b-1 d-2 g-5>~<b d g>16  <g-1 b-3 d-5>8. <d-1 g-3 b-5>8. <b-1 d-2 g-5 >16~<b d g>8 <g-1 b-3 d-5>
+    r8 <b-1 d-2 g-5>~<b d g>16  <g-1 b-3 d-5>8.
+    <d-1 g-3 b-5>8. <b-1 d-2 g-5 >16~<b d g>8 <g-1 b-3 d-5>
+
+    r8 <fs-1 b-2 d-4>~<fs b d>16  <b-1 d-2 fs-4>8.
+    <d-1 fs-3 b-5>8. <fs-1 b-2 d-4 >16~<fs b d>8 <b-1 d-2 fs-4>
+
+    r8 <a-1 d-2 fs-4>~<a d fs>16  <fs-1 a-2 d-5>8.
+    <d-1 fs-3 a-5>8. <a-1 d-2 fs-4 >16~<a d fs>8 <fs-1 a-2 d-5>
+  } \break
+
+
+  r8 g16  ( fs g8   b16 c b2 )
+  r8 fs16 ( g  fs8  g16 a g2 )
+  r8 fs16 ( e  fs8  b16 c b2 )
+  r8 fs16   ( e    fs2. ) \break
+
+  r8 g'16  ( fs g8   b16 c b2 )
+  r8 fs16 ( g  fs8  g16 a g2 )
+  r8 fs16 ( e  fs8  b16 c b4.) d,16-1 (e16-2
+  fs-3 e fs8~2.)  \break
+
+  \repeat volta 2 {
+    \ottava #1
+    <b g'>4. (<g e'>8 ~2)
+    <b g'>4. (<g d'>8 ~2)
+    <b fs'>4. (<fs d'>8 ~4.) e'8-3
+    (<a, fs'>4. <fs d'>8 ~2)  \break
+  }
 
 }
 
@@ -268,7 +296,7 @@ upper = \relative c'' {
     d4    fs4   d4   fs4   | \break
 
 
-    \repeat unfold 4 {
+    \repeat unfold 7{
     e'8 b e' b e' b e' b   |
     e4    g4   e4   g4     |
 
