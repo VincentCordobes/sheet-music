@@ -252,6 +252,47 @@ upper = \relative c'' {
     (<a, fs'>4. <fs d'>8 ~2)  \break
   }
 
+  \repeat volta 2 {
+    b16-> e b' 
+    b, e b'   
+    b, e b'   
+    b, e b'   
+    b,->e c-> e 
+
+    b-> d b' 
+    b, d b'   
+    b, d b'   
+    b, d b'   
+    b,->d a-> d 
+
+    fs,-> b fs' 
+    fs,   b fs'   
+    fs,   b fs'   
+    fs,   b fs'   
+    fs,-> b g-> b 
+  }
+
+  \alternative {
+    { 
+      a->  d a'
+      a,   d a'
+      a,   d a'
+      a,   d a'
+      a,-> d g,-> d'
+    }
+    {
+      a->  d a'
+      a,   d a'
+      a,   d a' _\markup {\small \italic "molto rit."}
+      a,   d a'
+      r8 g
+    }
+  }
+
+  % \ottava #0
+  <g, b e> 1 \arpeggio
+  \bar "|."
+
 }
 
 \parallelMusic voiceB,voiceC {
@@ -296,7 +337,7 @@ upper = \relative c'' {
     d4    fs4   d4   fs4   | \break
 
 
-    \repeat unfold 7{
+    \repeat unfold 8 {
     e'8 b e' b e' b e' b   |
     e4    g4   e4   g4     |
 
@@ -310,7 +351,13 @@ upper = \relative c'' {
     d4    fs4   d4   fs4   |
   }
 
+  d'8 a d' a  d' a d' a  |
+  d4    fs4   d4  fs4   |
+
+  <e e'>1\arpeggio
+
 }
+
 
 
 \score {
